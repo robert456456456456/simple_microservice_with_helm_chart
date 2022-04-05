@@ -2,8 +2,6 @@ FROM python:3.8.3-alpine
 
 
 WORKDIR /usr/src/app
-ARG DEBIAN_FRONTEND=noninteractive
-ARG DEBCONF_NOWARNINGS="yes"
 ADD app.py /usr/src/app/
 ADD example_data.py /usr/src/app/
 ADD requirements.txt /usr/src/app/
